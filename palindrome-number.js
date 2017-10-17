@@ -38,19 +38,36 @@ var isPalindrome = function(x){
     else{
         return false;
     }
-    */
+
 //方法3
+    if(x < 0 || (x % 10 == 0 && x != 0) )
+    return false;
     var rev = 0;
     while (x > rev) {
         rev = rev * 10 + x % 10;
         x= Math.floor(x/10);
-        console.log(rev);
-        console.log(x);
     }
-    if(x == rev || x == Math.floor(rev/10)){
+    if(x == rev || x == Math.floor(rev / 10)){
+        return true;
+    }else{
+        return false;
+    }
+     */
+    //方法4
+    if(x < 0 || (x % 10 == 0 && x != 0))
+    return false;
+    var s = x.toString();
+    var len = s.length;
+    var Newx = "";
+    if(len == 1)
+    return true;
+    for(var i = len-1; i >= 0; i--){
+         Newx +=s.charAt(i);
+    }
+    if( s == Newx){
         return true;
     }else{
         return false;
     }
 };
-console.log(isPalindrome(123))
+console.log(isPalindrome(123));
