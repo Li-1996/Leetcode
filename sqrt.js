@@ -18,13 +18,14 @@ var mySqrt = function (x) {
         }
     }
     return end;
-    */
+     */
     //从1开始遍历行不通
+    if(x == 0)
+    return 0;
     var i = 1;
     while(i < x){
-        if(i == x / i) return Math.floor(i);
+        if(i == Math.floor(x / i)) return i;
         else i++;
     }
-
 };
-console.log(mySqrt(123))
+console.log(mySqrt(6))

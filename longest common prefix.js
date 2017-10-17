@@ -15,4 +15,4 @@ var compare = function (a,b){
     }
     return a;
 }
-console.log(compare("","ac"))
+console.log(compare("abc","ac"))
