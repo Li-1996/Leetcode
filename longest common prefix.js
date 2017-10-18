@@ -1,6 +1,6 @@
 //找到字符串数组中最长的公共前缀
 var longestCommonPrefix = function(strs) {
-   var i =0;
+   var i =1;
     var prefix =strs[0];
     var len = strs.length;
     while(i < len){

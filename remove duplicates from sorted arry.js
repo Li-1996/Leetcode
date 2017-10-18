@@ -8,5 +8,6 @@ var removeDuplicates = function(nums) {
         console.log(nums[i]);
     }
     return i + 1;
+
 };
 console.log(removeDuplicates([4,4,5,6,7]));
