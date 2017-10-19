@@ -5,7 +5,6 @@ var removeDuplicates = function(nums) {
         if(nums[i] != nums[j])
             i++;
             nums[i] = nums[j];
-        console.log(nums[i]);
     }
     return i + 1;
 
