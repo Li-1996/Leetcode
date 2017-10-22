@@ -1,6 +1,6 @@
 //判断一个整数是不是回文
 var isPalindrome = function(x){
-    /*
+
 //方法1
     x = x + '';
     var arr = x.split(""); //将字符串分割成字符串数组
@@ -13,7 +13,7 @@ var isPalindrome = function(x){
     else{
         return false;
     }
-
+    /*
 //方法2：
     var a =[];
     var i = 0;
@@ -52,7 +52,7 @@ var isPalindrome = function(x){
     }else{
         return false;
     }
-     */
+
     //方法4
     if(x < 0 || (x % 10 == 0 && x != 0))
     return false;
@@ -68,6 +68,6 @@ var isPalindrome = function(x){
         return true;
     }else{
         return false;
-    }
+    }  */
 };
 console.log(isPalindrome(123));
